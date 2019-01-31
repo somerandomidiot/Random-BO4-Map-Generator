@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="description" content="A BO4 random map generator which can be used for custom games.">
+<meta name="author" content="AlexHGaming">
+
+<link rel = "stylesheet" href = "https://bootswatch.com/3/darkly/bootstrap.min.css">
+<link rel = "stylesheet" href = "./styles.css">
+<link rel = "icon" href = "./bo4.png">
+<script src = "./script.js"></script>
+
+<title>BO4 Map Generator</title>
+
+</head>
+
+<center>
+<div class = "centereverything">
+  <div id = "welcomemsg" style = "display: block;">
+<h1 style = "font-size: 75px;">Ready to get a map?</h1>
+<br>
+<button type = "button" onclick = "getMap()" class = "btn btn-danger btn-lg">Generate a random Map (BO4)</button>
+  </div>
+
+  <div id = "game" style = "display: none;">
+    <h1>Map:</h1>
+    <u><h2 id = "displaymap"></h2></u>
+    <br>
+  <input type = "checkbox" id = "dlccheck" class = "form-control"><p id = "includedlc"></p>
+
+    <button type = "button" onclick = "getMap()" class = "btn btn-danger btn-lg">Gimme another map</button>
+
+  </div>
+
+</div>
+
+</center>
+
+</body>
+</html>
